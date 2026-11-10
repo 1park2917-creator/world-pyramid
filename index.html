@@ -237,7 +237,7 @@ textarea:focus,input[type=text]:focus{outline:3px solid var(--focus);border-colo
 
 <!-- 5. 분석하기 -->
 <section class="panel" id="tab-analysis">
-  <div class="guide">👉 분석할 나라를 고르고 인구 피라미드를 보며 <b>특징 · 원인 · 과제</b>를 써 보세요. 다 쓰면 발표용 가로 PDF로 받을 수 있어요.</div>
+  <div class="guide">👉 분석할 나라를 고르고 인구 피라미드를 보며 <b>분석한 결과</b>를 써 보세요. 다 쓰면 발표용 가로 PDF로 받을 수 있어요.</div>
   <div class="chips" id="aChips"></div>
   <div class="grid2">
     <div class="sticky-col">
@@ -256,20 +256,20 @@ textarea:focus,input[type=text]:focus{outline:3px solid var(--focus);border-colo
         <textarea id="aFeature" maxlength="300"></textarea><div class="muted cnt" data-for="aFeature"></div>
       </div>
       <div class="field">
-        <label for="aCause">② 원인 <span class="muted">왜 이런 인구 구조가 되었을까? (인문환경으로 추론)</span></label>
-        <p class="hint">💡 ①에서 찾은 특징 하나를 골라, 그렇게 된 까닭을 이 나라의 <b>산업 · 경제 수준 · 종교와 문화 · 역사(전쟁, 이주) · 나라의 정책</b>과 연결해 보세요. 아래 <b>‘인문환경 보기’</b> 버튼을 눌러 단서를 찾아보세요. 예) “~해서 → 아이를 (적게/많이) 낳았고, 그래서 아래쪽 막대가 ~해요.”</p>
+        <label for="aCause">② 원인 <span class="muted">왜 이런 인구 구조가 되었을까? </span></label>
+        <p class="hint">💡 ①에서 찾은 특징 하나를 골라, 그렇게 된 까닭을 이 나라의 <b>산업 · 경제 수준 · 종교와 문화 · 역사(전쟁, 이주) · 나라의 정책</b>과 연결해 보세요. 아래 <b>‘인문환경 보기’</b> 버튼을 눌러 단서를 찾아보세요. </p>
         <button class="btn ghost" type="button" id="aEnvBtn" style="justify-self:start" aria-expanded="false" aria-controls="aEnv"></button>
         <div class="card env" id="aEnv" hidden></div>
         <textarea id="aCause" maxlength="300"></textarea><div class="muted cnt" data-for="aCause"></div>
       </div>
       <div class="field">
-        <label for="aProblem">③ 과제 · 문제점 <span class="muted">이 인구 구조에서 생길 수 있는 문제</span></label>
+        <label for="aProblem">③ 문제점 <span class="muted">이 인구 구조에서 생길 수 있는 문제</span></label>
         <p class="hint">💡 일할 사람, 학교, 병원, 일자리, 식량, 돌봄은 충분할까요?</p>
         <textarea id="aProblem" maxlength="300"></textarea><div class="muted cnt" data-for="aProblem"></div>
       </div>
       <div class="field">
-        <label for="aSolution">④ 과제 · 해결 방안 <span class="muted">문제를 풀기 위해 할 수 있는 일</span></label>
-        <p class="hint">💡 나라, 회사, 마을, 가족은 각각 무엇을 할 수 있을까요?</p>
+        <label for="aSolution">④ 해결 방안 <span class="muted">더 살기 좋은 나라가 되려면? </span></label>
+        <p class="hint">💡 정부, 기업, 시민은 무엇을 할 수 있을까요?</p>
         <textarea id="aSolution" maxlength="300"></textarea><div class="muted cnt" data-for="aSolution"></div>
       </div>
       <div class="row"><button class="btn primary" type="submit" style="font-size:1.1rem">📄 완성하고 PDF로 받기</button><span id="aStatus" style="font-weight:700"></span></div>
